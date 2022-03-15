@@ -1,5 +1,5 @@
 from dwave.system import DWaveSampler, EmbeddingComposite
-sampler = EmbeddingComposite(DWaveSampler())
+sampler = EmbeddingComposite(DWaveSampler(solver={'topology__type': 'chimera'}))
 
 linear = {('x','x'):-1, ('z','z'):-1, ('y','y'):-1}
 quadratic = {('y','z'):2, ('x','y'):2, ('x','z'):2 }
