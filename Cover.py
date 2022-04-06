@@ -64,7 +64,7 @@ def h_problem(qubits, clauses):
         	value = m[i][j]
         	Q[(i,j)]=value
 
-     return Q
+    return Q
 
 # Generates problem QUBO matrix for weighted problem Hamiltonian as a dictionary
 
@@ -88,7 +88,7 @@ def h_weighted(qubits, clauses, w):
         	value = m[i][j]
         	Q[(i,j)]=value
 
-     return Q
+    return Q
 
 
 # Main program
